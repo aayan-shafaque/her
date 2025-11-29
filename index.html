@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Happy Birthday My Love 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <canvas id="sparkles-canvas"></canvas>
+        <div class="hero-content">
+            <canvas id="heart-canvas"></canvas>
+            <h1 class="hero-title">
+                <span class="word">Happy</span>
+                <span class="word">Birthday</span>
+                <span class="word">My Love</span>
+            </h1>
+            <button class="btn-start" id="start-btn">
+                <span>Start Experience</span>
+                <div class="btn-glow"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Card Carousel Section -->
+    <section id="carousel" class="section carousel-section">
+        <h2 class="section-title">Messages From My Heart</h2>
+        <div class="carousel-container">
+            <div class="carousel-3d" id="carousel-3d">
+                <div class="carousel-card" data-index="0">
+                    <div class="card-content">
+                        <div class="card-icon">✨</div>
+                        <h3>You Light Up My World</h3>
+                        <p>Your smile brightens even my darkest days</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-index="1">
+                    <div class="card-content">
+                        <div class="card-icon">💫</div>
+                        <h3>Every Moment Is Magical</h3>
+                        <p>Time spent with you feels like a beautiful dream</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-index="2">
+                    <div class="card-content">
+                        <div class="card-icon">💖</div>
+                        <h3>You're My Everything</h3>
+                        <p>My heart beats only for you</p>
+                    </div>
+                </div>
+                <div class="carousel-card" data-index="3">
+                    <div class="card-content">
+                        <div class="card-icon">🌟</div>
+                        <h3>Forever Grateful</h3>
+                        <p>Thank you for being you and loving me</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots" id="carousel-dots"></div>
+    </section>
+
+    <!-- 3D Cube Section -->
+    <section id="cube" class="section cube-section">
+        <h2 class="section-title">Our Precious Moments</h2>
+        <div class="cube-container">
+            <div class="cube-3d" id="cube-3d">
+                <div class="cube-face front"></div>
+                <div class="cube-face back"></div>
+                <div class="cube-face right"></div>
+                <div class="cube-face left"></div>
+                <div class="cube-face top"></div>
+                <div class="cube-face bottom"></div>
+            </div>
+        </div>
+        <p class="hint-text">Drag to rotate</p>
+    </section>
+
+    <!-- Particle Canvas Section -->
+    <section id="particles" class="section particles-section">
+        <canvas id="hearts-canvas"></canvas>
+        <div class="particles-overlay">
+            <h2 class="floating-title">Touch the Hearts</h2>
+        </div>
+    </section>
+
+    <!-- Romantic Animated Birthday Section -->
+    <section id="romantic-birthday" class="section romantic-section">
+        <div id="romantic-wish" class="glow">
+            <p></p>
+        </div>
+    </section>
+
+    <!-- Reasons Slider -->
+    <section id="reasons" class="section love-reasons">
+      <h2 class="section-title">Reasons Why I Love You</h2>
+      <div class="reasons-slider">
+        <div class="reason-card">Your smile melts my stress 😊</div>
+        <div class="reason-card">You care like no one else 💖</div>
+        <div class="reason-card">You're beautiful inside and out ✨</div>
+        <div class="reason-card">You make me believe in forever ♾️</div>
+        <div class="reason-card">You make my world brighter 🌟</div>
+        <div class="reason-card">Every moment with you is magic 💫</div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section love-timeline">
+      <h2 class="section-title">Our Journey</h2>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-date">Feb 2023</div>
+          <div class="timeline-text">Our first text 📨</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Mar 2023</div>
+          <div class="timeline-text">Our first call ☎️</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">May 2023</div>
+          <div class="timeline-text">First "I love you" ❤️</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Jul 2023</div>
+          <div class="timeline-text">You made me smile in my darkest hour 🌈</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Nov 30, 2025</div>
+          <div class="timeline-text">Your 21st Birthday 🎂</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift Box Section -->
+    <section id="gift" class="section gift-section">
+        <h2 class="section-title">A Special Gift For You</h2>
+        <div class="gift-container">
+            <div class="gift-box" id="gift-box">
+                <div class="gift-lid">
+                    <div class="gift-ribbon"></div>
+                </div>
+                <div class="gift-body">
+                    <div class="gift-bow">🎀</div>
+                </div>
+                <div class="gift-message" id="gift-message">
+                    <p>You are the greatest gift in my life. Thank you for being you, for your love, your kindness, and for making every day special. Happy Birthday my love! 💖</p>
+                </div>
+            </div>
+            <div class="gift-burst" id="gift-burst"></div>
+        </div>
+        <p class="hint-text" id="gift-hint">Tap to open</p>
+    </section>
+
+    <!-- Celebration Section -->
+    <section id="celebration" class="section celebration-section">
+        <h2 class="section-title">Counting Our Blessings</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">💕</div>
+                <div class="stat-number" data-target="467">0</div>
+                <div class="stat-label">Days of Love</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🌟</div>
+                <div class="stat-number infinity">∞</div>
+                <div class="stat-label">Infinite Memories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">👑</div>
+                <div class="stat-number" data-target="1">0</div>
+                <div class="stat-label">Amazing You</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Message Section -->
+    <section id="final" class="section final-section">
+        <canvas id="final-hearts"></canvas>
+        <div class="final-content">
+            <h2 class="final-title">Happy Birthday! 🎂</h2>
+            <p class="final-message">
+                Happy Birthday to the most incredible person I know! May this year bring you endless joy, success, and all the love your heart can hold. I'm so grateful to celebrate this special day with you. Here's to many more birthdays together! I love you more than words can express. 🎉💕
+            </p>
+            <button class="btn-replay" id="replay-btn">
+                <span>Experience Again</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ❤️ START: Romantic Addons -->
+    <!-- Floating Love Notes -->
+    <div id="floating-notes">
+      <div class="note">You're my everything ❤️</div>
+      <div class="note">Forever yours 💫</div>
+      <div class="note">Shafaque, you're perfect 🌸</div>
+      <div class="note">My heart chose you ❤️</div>
+    </div>
+
+    <!-- Surprise Box -->
+    <div class="secret-reveal">
+      <button onclick="revealSecret()">Tap to reveal something sweet 💌</button>
+      <div id="secret-text" class="hidden">
+        You are the one my heart had been waiting for all along. I love you endlessly, Shafaque. 💖
+      </div>
+    </div>
+    <!-- ❤️ END: Romantic Addons -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="app.js"></script>
+</body>
+</html>
